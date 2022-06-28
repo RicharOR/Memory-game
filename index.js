@@ -137,7 +137,7 @@ startBtn.addEventListener('click', () => {
   // Iniciar cronometro
   interval = setInterval(timeGenerator, 1000)
   moves.innerHTML = `<span>Movimientos: </span>${movesCount}`
-  initializer
+  initializer()
 })
 
 // Detener el juego
@@ -148,7 +148,6 @@ stopBtn.addEventListener(
     stopBtn.classList.add('hide')
     startBtn.classList.remove('hide')
     clearInterval(interval)
-    initializer()
   })
 )
 
