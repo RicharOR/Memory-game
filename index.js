@@ -148,6 +148,7 @@ stopBtn.addEventListener(
     stopBtn.classList.add('hide')
     startBtn.classList.remove('hide')
     clearInterval(interval)
+    initializer()
   })
 )
 
